@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f0eb;
+}
+
+.head {
+  /* height: 64px; */
+  height: 64px;
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+
+.main {
+  height: 1000px;
+  background-color: wheat;
+  margin: 0 30px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .left {
+  width: auto;
+  height: 1000px;
+  margin-right: 16px;
+  background-color: aqua;
+  flex: 1;
+}
+
+.main .mid {
+  width: auto;
+  height: 1000px;
+  background-color: blueviolet;
+  flex: 3;
+}
+
+.main .right {
+  width: auto;
+  height: 1000px;
+  margin-left: 16px;
+  background-color: blue;
+  flex: 1.5;
+}
