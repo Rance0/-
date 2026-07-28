@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "阿里妈妈刀隶体 Regular";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/WONJupPFX6Sd/DdunZ3kNMHnk.woff2") format("woff2"),
+  url("https://at.alicdn.com/wf/webfont/WONJupPFX6Sd/Av2EqN1HhLSS.woff") format("woff");font-variation-settings: normal;font-display: swap;
+}
+
+.webfont {
+  font-family: "阿里妈妈刀隶体 Regular";font-variation-settings: normal; /* Chrome 140 以下版本需要 */}
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +18,42 @@ body {
 .head {
   /* height: 64px; */
   height: 64px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
   border-bottom: 1px solid gray;
+}
+
+.head .tradeMaker i:first-child {
+  font-size: 50px;
+}
+
+.head .tradeMaker {
+  display: flex;
+  align-items: center;
+}
+
+.head .tradeMaker .art-font {
+  font-family: '阿里妈妈刀隶体 Regular';
+  font-size: 40px;
+}
+
+.head .user {
+  display: flex;
+  align-items: center;
+}
+
+.head .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.head .user .uname {
+  
 }
 
 .main {
@@ -45,4 +86,21 @@ body {
   margin-left: 16px;
   background-color: blue;
   flex: 1.5;
+}
+
+.returnTop {
+  right: 70px;
+  bottom: 50px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  cursor: pointer;
+}
+
+.returnTop span {
+  font-size: 30px;
 }
